@@ -60,6 +60,9 @@ jobs:
     - name: Prepare Machine
       shell: pwsh
       run: scripts/prepare-machine.ps1 -ForTest
+    - name: Create build
+      shell: pwsh
+      run: scripts/build.ps1 
     - name: Download Package
       uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a
       with:
